@@ -230,6 +230,8 @@ header {
   display: flex;
   margin: 3.125rem -1.875rem 0 -1.875rem;
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* COLONNE */
@@ -238,14 +240,14 @@ header {
   margin: 0 1.875rem;
 }
 /* parte alata colonna */
-.plans-offers .plans-offer .top-column {
+.plans-offers .top-column {
   width: 100%;
   text-align: center;
   padding: 0.625rem 0;
   border-bottom: 0.0625rem solid var(--border-color);
 }
 /* parte bassa colonna */
-.plans-offers .plans-offer .bottom-column {
+.plans-offers .bottom-column {
   display: flex;
   flex-direction: column;
   padding: 2.5rem 1.875rem;
@@ -308,6 +310,24 @@ header {
 TODO margine destro alle icone nella lista
 TODO e allineamento del testo
 */
+/* blocco in fondo */
+.team {
+  width: calc(100% - 60px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.team .bottom-column {
+  position: relative;
+  padding-right: 300px;
+}
+.team .bottom-column .btn {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  padding: 12px 35px;
+}
 /*
 ---------
 !FOOTER 
