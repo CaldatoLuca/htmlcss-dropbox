@@ -11,6 +11,9 @@
 body {
   padding-top: 80px;
 }
+img {
+  display: block;
+}
 /* 
 ---------
 !DEBUG
@@ -30,12 +33,12 @@ body {
 .debug .bottom-jumbo {
   background-color: brown;
 }
-.debug .jumbo-left {
+/* .debug .jumbo-left {
   background-color: tomato;
 }
 .debug .jumbo-img {
   background-color: salmon;
-}
+} */
 
 /*
 ------------
@@ -49,7 +52,10 @@ h1 {
   font-size: 80px;
   font-weight: bolder;
 }
-
+:root {
+  --margin-bottom: 35px;
+  --margin-bottom-big: 50px;
+}
 /*
 ----------
 !PALETTE
@@ -77,10 +83,12 @@ h1 {
   background-color: var(--btn-color);
   color: white;
   font-size: 16px;
+}
+.btn-small {
   padding: 8px 16px;
 }
-h1 {
-  margin-bottom: 50px;
+.btn-big {
+  padding: 12px 18px;
 }
 
 /*
@@ -90,7 +98,7 @@ h1 {
 */
 /* ?parte alta header */
 .top-header {
-  height: 85px;
+  height: 80px;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -118,25 +126,49 @@ h1 {
   color: black;
 }
 
-/* ?parte alta header */
+/* ?parte bassa header */
 .bottom-header {
   background-color: var(--jumbo-color);
+  padding: 70px 0 0 0;
+  position: relative;
 }
-.bottom-header .jumbo {
-  padding: 80px 0;
+.jumbo .top-jumbo {
+  margin-bottom: var(--margin-bottom-big);
 }
 .jumbo .bottom-jumbo {
   display: flex;
 }
 .bottom-jumbo .jumbo-left {
-  width: 33%;
+  width: 32%;
+}
+.bottom-jumbo .jumbo-left p,
+.bottom-jumbo .jumbo-left .btn {
+  margin-bottom: var(--margin-bottom);
+}
+.bottom-jumbo .jumbo-left :nth-child(3) {
+  margin-bottom: var(--margin-bottom-big);
+}
+.bottom-jumbo .jumbo-left i {
+  font-size: 50px;
 }
 .bottom-jumbo .jumbo-img {
-  width: 67%;
+  width: 68%;
 }
 .bottom-jumbo .jumbo-img img {
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
+.bottom-header .white-bar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  z-index: 1;
+  background-color: white;
+}
+
 /*
 -------
 !MAIN
