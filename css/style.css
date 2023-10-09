@@ -21,6 +21,21 @@ body {
 .debug .jumbo {
   background-color: palevioletred;
 }
+.debug .big-container {
+  background-color: yellow;
+}
+.debug .top-jumbo {
+  background-color: slateblue;
+}
+.debug .bottom-jumbo {
+  background-color: brown;
+}
+.debug .jumbo-left {
+  background-color: tomato;
+}
+.debug .jumbo-img {
+  background-color: salmon;
+}
 
 /*
 ------------
@@ -54,12 +69,18 @@ h1 {
   margin: 0 auto;
   width: 1180px;
 }
+.margin-bottom {
+  margin-bottom: 35px;
+}
 .btn {
   border: none;
   background-color: var(--btn-color);
   color: white;
   font-size: 16px;
   padding: 8px 16px;
+}
+h1 {
+  margin-bottom: 50px;
 }
 
 /*
@@ -103,6 +124,18 @@ h1 {
 }
 .bottom-header .jumbo {
   padding: 80px 0;
+}
+.jumbo .bottom-jumbo {
+  display: flex;
+}
+.bottom-jumbo .jumbo-left {
+  width: 33%;
+}
+.bottom-jumbo .jumbo-img {
+  width: 67%;
+}
+.bottom-jumbo .jumbo-img img {
+  width: 100%;
 }
 /*
 -------
