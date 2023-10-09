@@ -23,6 +23,14 @@ section {
   height: 100vh;
   /* background-color: antiquewhite; */
 }
+.debug .plans-offers {
+  background-color: salmon;
+  height: 1000px;
+}
+.debug .plans-offer {
+  background-color: turquoise;
+  height: 500px;
+}
 /*
 ------------
 !TYPOGRAPHY
@@ -55,6 +63,7 @@ h2 {
 !COMMON
 ---------
 */
+/* ?container */
 .container {
   margin: 0 auto;
   width: 1000px;
@@ -63,9 +72,7 @@ h2 {
   margin: 0 auto;
   width: 1180px;
 }
-.margin-bottom {
-  margin-bottom: 35px;
-}
+/* ?bottoni */
 .btn {
   border: none;
   background-color: var(--btn-color);
@@ -77,6 +84,10 @@ h2 {
 }
 .btn-big {
   padding: 12px 18px;
+}
+/* ?bordo */
+.border {
+  border: 1px solid var(--border-color);
 }
 
 /*
@@ -179,7 +190,6 @@ header {
   border-radius: 50px;
   display: inline-block;
   vertical-align: middle;
-  border: 1px solid var(--border-color);
   position: relative;
 }
 .plans .plans-payment .month .selected {
@@ -197,6 +207,27 @@ header {
 }
 .plans .plans-payment span {
   vertical-align: middle;
+}
+/* griglia */
+.plans-offers {
+  display: flex;
+  margin: 0 -30px;
+  width: 100%;
+}
+.plans-offers .plans-offer {
+  width: calc(100% / 3 - 60px);
+  margin: 0 30px;
+}
+.plans-offers .plans-offer .top-column {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.plans-offers .plans-offer .bottom-column {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
 }
 /*
 ---------
