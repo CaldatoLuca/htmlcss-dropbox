@@ -1,0 +1,66 @@
+/* 
+---------
+!RESET
+---------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+---------
+!DEBUG
+---------
+*/
+/* ?header debug */
+.debug .top-header {
+  background-color: saddlebrown;
+}
+
+/*
+------------
+!TYPOGRAPHY
+------------
+*/
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*
+----------
+!PALETTE
+----------
+*/
+:root {
+  --btn-color: rgb(0, 97, 255);
+  --jumbo-color: rgb(180, 208, 231);
+}
+
+/*
+---------
+!COMMON
+---------
+*/
+
+/*
+---------
+!HEADER
+---------
+*/
+.top-header {
+  height: 85px;
+}
+
+/*
+-------
+!MAIN
+-------
+*/
+
+/*
+---------
+!FOOTER 
+---------
+*/
