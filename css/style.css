@@ -9,10 +9,13 @@
   box-sizing: border-box;
 }
 body {
-  padding-top: 80px;
+  padding-top: 5rem;
 }
 img {
   display: block;
+}
+ul {
+  list-style-type: none;
 }
 /* 
 ---------
@@ -25,11 +28,11 @@ section {
 }
 .debug .plans-offers {
   background-color: salmon;
-  height: 1000px;
+  height: 62.5rem;
 }
 .debug .plans-offer {
   background-color: turquoise;
-  height: 500px;
+  height: 31.25rem;
 }
 /*
 ------------
@@ -38,15 +41,18 @@ section {
 */
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 0.9375rem;
 }
 h1 {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: bolder;
 }
 h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
-
+h3 {
+  font-size: 1.5rem;
+}
 /*
 ----------
 !PALETTE
@@ -66,58 +72,71 @@ h2 {
 /* ?container */
 .container {
   margin: 0 auto;
-  width: 1000px;
+  width: 67.5rem;
 }
 .big-container {
   margin: 0 auto;
-  width: 1180px;
+  width: 73.75rem;
 }
 /* ?bottoni */
 .btn {
   border: none;
   background-color: var(--btn-color);
   color: white;
-  font-size: 16px;
+  font-size: 0.875rem;
+  text-align: center;
 }
 .btn-small {
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
 }
 .btn-big {
-  padding: 12px 18px;
+  padding: 0.75rem 0.75rem;
 }
 /* ?bordo */
 .border {
-  border: 1px solid var(--border-color);
+  border: 0.0625rem solid var(--border-color);
 }
-
+/* ?margin */
+h1 {
+  margin-bottom: 3.125rem;
+}
+h2 {
+  margin-bottom: 3.75rem;
+}
+h3 {
+  margin-bottom: 1.125rem;
+}
+h4 {
+  margin-bottom: 1.875rem;
+}
 /*
 ---------
 !HEADER
 ---------
 */
 header {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 /* ?parte alta header */
 .top-header {
-  height: 80px;
+  height: 5rem;
   position: fixed;
   z-index: 99;
   top: 0;
   left: 0;
   right: 0;
+  background-color: white;
 }
 .top-header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 .top-header nav ul {
   display: flex;
-  list-style-type: none;
-  gap: 40px;
+  gap: 2.5rem;
 }
 .top-header nav ul li {
   display: flex;
@@ -131,27 +150,25 @@ header {
 /* ?parte bassa header */
 .bottom-header {
   background-color: var(--jumbo-color);
-  padding: 70px 0 0 0;
+  padding: 4.375rem 0 0 0;
   position: relative;
-}
-.jumbo .top-jumbo {
-  margin-bottom: 50px;
 }
 .jumbo .bottom-jumbo {
   display: flex;
 }
 .bottom-jumbo .jumbo-left {
   width: 32%;
+  padding-right: 1.875rem;
 }
 .bottom-jumbo .jumbo-left p,
 .bottom-jumbo .jumbo-left .btn {
-  margin-bottom: 35px;
+  margin-bottom: 2.1875rem;
 }
 .bottom-jumbo .jumbo-left :nth-child(3) {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .bottom-jumbo .jumbo-left i {
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 .bottom-jumbo .jumbo-img {
   width: 68%;
@@ -166,7 +183,7 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 50px;
+  height: 3.125rem;
   z-index: 1;
   background-color: white;
 }
@@ -176,18 +193,17 @@ header {
 !MAIN
 -------
 */
-/* ?prima sezione */
-.plans h2 {
-  margin-bottom: 60px;
-}
+/* ?PRIMA SEZIONE */
 .plans .plans-payment {
   display: flex;
-  gap: 50px;
+  gap: 3.125rem;
 }
+
+/* *BOTTONI FINTI */
 .plans .plans-payment .fake-button {
-  height: 20px;
-  width: 20px;
-  border-radius: 50px;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 3.125rem;
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -196,10 +212,10 @@ header {
   background-color: var(--btn-color);
 }
 .plans .plans-payment .fake-button div {
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -208,27 +224,90 @@ header {
 .plans .plans-payment span {
   vertical-align: middle;
 }
-/* griglia */
+
+/* *GRIGLIA */
 .plans-offers {
   display: flex;
-  margin: 0 -30px;
+  margin: 3.125rem -1.875rem 0 -1.875rem;
   width: 100%;
 }
+
+/* COLONNE */
 .plans-offers .plans-offer {
-  width: calc(100% / 3 - 60px);
-  margin: 0 30px;
+  width: calc(100% / 3 - 3.75rem);
+  margin: 0 1.875rem;
 }
+/* parte alata colonna */
 .plans-offers .plans-offer .top-column {
   width: 100%;
   text-align: center;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--border-color);
+  padding: 0.625rem 0;
+  border-bottom: 0.0625rem solid var(--border-color);
 }
+/* parte bassa colonna */
 .plans-offers .plans-offer .bottom-column {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 2.5rem 1.875rem;
 }
+.plans-offer .bottom-column strong {
+  margin-bottom: 0.625rem;
+}
+.plans-offer .bottom-column .period {
+  color: var(--border-color);
+  margin-bottom: 2.8125rem;
+}
+.plans-offer .bottom-column ul li {
+  margin-bottom: 0.9375rem;
+}
+.plans-offer .bottom-column .btn {
+  margin: 1.875rem 0 1.25rem 0;
+}
+.plans-offer .bottom-column a {
+  color: var(--btn-color);
+}
+.plans-offer .bottom-column hr {
+  border: none;
+  background-color: var(--border-color);
+  height: 0.0625rem;
+  width: 20%;
+  margin: 2.8125rem 0;
+}
+/* icone lista */
+.plans-offer .bottom-column ul {
+  --icon-size: 14px;
+  padding-left: 0;
+}
+.plans-offer .bottom-column ul li {
+  padding-left: var(--icon-size);
+}
+.plans-offer .bottom-column ul li::before {
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: calc(var(--icon-size) * -1);
+  width: var(--icon-size);
+}
+.plans-offer .bottom-column ul #single-user::before {
+  content: "\f007";
+}
+.plans-offer .bottom-column ul #multi-user::before {
+  content: "\f0c0";
+}
+.plans-offer .bottom-column ul #folder::before {
+  content: "\f07b";
+}
+.plans-offer .bottom-column ul #extra::before {
+  content: "\f1e0";
+}
+.plans-offer .bottom-column ul #check::before {
+  content: "\f00c";
+  color: var(--btn-color);
+  font-weight: bolder;
+}
+/* 
+TODO margine destro alle icone nella lista
+TODO e allineamento del testo
+*/
 /*
 ---------
 !FOOTER 
