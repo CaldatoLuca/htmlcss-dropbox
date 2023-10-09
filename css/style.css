@@ -19,27 +19,10 @@ img {
 !DEBUG
 ---------
 */
-/* ?header debug */
-
-.debug .jumbo {
-  background-color: palevioletred;
+section {
+  height: 100vh;
+  /* background-color: antiquewhite; */
 }
-.debug .big-container {
-  background-color: yellow;
-}
-.debug .top-jumbo {
-  background-color: slateblue;
-}
-.debug .bottom-jumbo {
-  background-color: brown;
-}
-/* .debug .jumbo-left {
-  background-color: tomato;
-}
-.debug .jumbo-img {
-  background-color: salmon;
-} */
-
 /*
 ------------
 !TYPOGRAPHY
@@ -52,10 +35,10 @@ h1 {
   font-size: 80px;
   font-weight: bolder;
 }
-:root {
-  --margin-bottom: 35px;
-  --margin-bottom-big: 50px;
+h2 {
+  font-size: 40px;
 }
+
 /*
 ----------
 !PALETTE
@@ -64,6 +47,7 @@ h1 {
 :root {
   --btn-color: rgb(0, 97, 255);
   --jumbo-color: rgb(180, 208, 231);
+  --border-color: rgb(208, 208, 211);
 }
 
 /*
@@ -71,6 +55,10 @@ h1 {
 !COMMON
 ---------
 */
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
 .big-container {
   margin: 0 auto;
   width: 1180px;
@@ -96,6 +84,9 @@ h1 {
 !HEADER
 ---------
 */
+header {
+  margin-bottom: 100px;
+}
 /* ?parte alta header */
 .top-header {
   height: 80px;
@@ -133,7 +124,7 @@ h1 {
   position: relative;
 }
 .jumbo .top-jumbo {
-  margin-bottom: var(--margin-bottom-big);
+  margin-bottom: 50px;
 }
 .jumbo .bottom-jumbo {
   display: flex;
@@ -143,10 +134,10 @@ h1 {
 }
 .bottom-jumbo .jumbo-left p,
 .bottom-jumbo .jumbo-left .btn {
-  margin-bottom: var(--margin-bottom);
+  margin-bottom: 35px;
 }
 .bottom-jumbo .jumbo-left :nth-child(3) {
-  margin-bottom: var(--margin-bottom-big);
+  margin-bottom: 50px;
 }
 .bottom-jumbo .jumbo-left i {
   font-size: 50px;
@@ -174,7 +165,39 @@ h1 {
 !MAIN
 -------
 */
-
+/* ?prima sezione */
+.plans h2 {
+  margin-bottom: 60px;
+}
+.plans .plans-payment {
+  display: flex;
+  gap: 50px;
+}
+.plans .plans-payment .fake-button {
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+.plans .plans-payment .month .selected {
+  background-color: var(--btn-color);
+}
+.plans .plans-payment .fake-button div {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plans .plans-payment span {
+  vertical-align: middle;
+}
 /*
 ---------
 !FOOTER 
