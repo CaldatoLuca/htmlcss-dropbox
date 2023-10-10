@@ -22,18 +22,7 @@ ul {
 !DEBUG
 ---------
 */
-section {
-  height: 100vh;
-  /* background-color: antiquewhite; */
-}
-.debug .plans-offers {
-  background-color: salmon;
-  height: 62.5rem;
-}
-.debug .plans-offer {
-  background-color: turquoise;
-  height: 31.25rem;
-}
+
 /*
 ------------
 !TYPOGRAPHY
@@ -289,19 +278,19 @@ header {
   margin-left: calc(var(--icon-size) * -1);
   width: var(--icon-size);
 }
-.plans-offer .bottom-column ul #single-user::before {
+.plans-offer .bottom-column ul .single-user::before {
   content: "\f007";
 }
-.plans-offer .bottom-column ul #multi-user::before {
+.plans-offer .bottom-column ul .multi-user::before {
   content: "\f0c0";
 }
-.plans-offer .bottom-column ul #folder::before {
+.plans-offer .bottom-column ul .folder::before {
   content: "\f07b";
 }
-.plans-offer .bottom-column ul #extra::before {
+.plans-offer .bottom-column ul .extra::before {
   content: "\f1e0";
 }
-.plans-offer .bottom-column ul #check::before {
+.plans-offer .bottom-column ul .check::before {
   content: "\f00c";
   color: var(--btn-color);
   font-weight: bolder;
