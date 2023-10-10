@@ -1,18 +1,10 @@
 /* 
 TODO margine destro alle icone nella lista
 TODO e allineamento del testo
+TODO favicon
+TODO chidere active duratura al click e div bianco per img
 */
-/* 
-TODO linea sotto i link nel nav
-TODO probabilmente i li hanno altezza 100% e hover e su di loro
-*/
-/* 
-TODO :hover sui bottoni (brightness 1.4)
-TODO box-shadow nav
-*/
-/* 
-TODO cambiare nome a .plans.offers e .plans-offer
-*/
+
 /* 
 ---------
 !RESET
@@ -117,6 +109,9 @@ h3 {
   border: none;
   padding: 12px 50px;
 }
+.btn:hover {
+  filter: brightness(1.2);
+}
 /* ?bordo */
 .border {
   border: 0.0625rem solid var(--border-color);
@@ -184,6 +179,7 @@ h4 {
   left: 0;
   right: 0;
   background-color: white;
+  box-shadow: 0px 15px 10px -15px #111;
 }
 .top-header nav {
   display: flex;
@@ -199,6 +195,9 @@ h4 {
 .top-header nav ul li {
   display: flex;
   align-items: center;
+}
+.top-header nav ul li:hover {
+  border-bottom: 1px solid gray;
 }
 .top-header a {
   text-decoration: none;
@@ -276,7 +275,7 @@ h4 {
 }
 
 /* *GRIGLIA */
-.plans-offers {
+.griglia {
   display: flex;
   margin: 0 -1.875rem 0 -1.875rem;
   width: 100%;
@@ -285,53 +284,53 @@ h4 {
 }
 
 /* COLONNE */
-.plans-offers .plans-offer {
+.griglia .blocco-griglia {
   width: calc(100% / 3 - 3.75rem);
   margin: 0 1.875rem;
 }
 /* parte alata colonna */
-.plans-offers .top-column {
+.griglia .top-column {
   width: 100%;
   text-align: center;
   padding: 0.625rem 0;
   border-bottom: 0.0625rem solid var(--border-color);
 }
 /* parte bassa colonna */
-.plans-offers .bottom-column {
+.griglia .bottom-column {
   display: flex;
   flex-direction: column;
   padding: 2.5rem 1.875rem;
 }
-.plans-offer .bottom-column .period {
+.blocco-griglia .bottom-column .period {
   color: var(--border-color);
 }
 /* icone lista */
-.plans-offer .bottom-column ul {
+.blocco-griglia .bottom-column ul {
   --icon-size: 14px;
   padding-left: 0;
 }
-.plans-offer .bottom-column ul li {
+.blocco-griglia.bottom-column ul li {
   padding-left: var(--icon-size);
 }
-.plans-offer .bottom-column ul li::before {
+.blocco-griglia .bottom-column ul li::before {
   font-family: FontAwesome;
   display: inline-block;
   margin-left: calc(var(--icon-size) * -1);
   width: var(--icon-size);
 }
-.plans-offer .bottom-column ul .single-user::before {
+.blocco-griglia.bottom-column ul .single-user::before {
   content: "\f007";
 }
-.plans-offer .bottom-column ul .multi-user::before {
+.blocco-griglia .bottom-column ul .multi-user::before {
   content: "\f0c0";
 }
-.plans-offer .bottom-column ul .folder::before {
+.blocco-griglia .bottom-column ul .folder::before {
   content: "\f07b";
 }
-.plans-offer .bottom-column ul .extra::before {
+.blocco-griglia .bottom-column ul .extra::before {
   content: "\f1e0";
 }
-.plans-offer .bottom-column ul .check::before {
+.blocco-griglia .bottom-column ul .check::before {
   content: "\f00c";
   color: var(--btn-color);
   font-weight: bolder;
@@ -459,6 +458,42 @@ h4 {
   position: absolute;
   right: 0;
   top: 10px;
+}
+
+/* ?quinta sezione */
+.questions .question {
+  padding: 40px 190px 40px 0;
+  border-bottom: 0.5px solid grey;
+  border-top: 0.5px solid grey;
+  position: relative;
+}
+.questions .question:hover {
+  background-color: rgb(128, 128, 128, 0.2);
+}
+.questions :nth-child(3) {
+  border: none;
+}
+.questions .question .fa-chevron-down,
+.questions .question .fa-chevron-up {
+  position: absolute;
+  right: 30px;
+}
+.questions .question .fa-chevron-up {
+  display: none;
+  top: 40px;
+}
+.questions .question p {
+  margin-top: 40px;
+  display: none;
+}
+.questions .question:active p {
+  display: block;
+}
+.questions .question:active .fa-chevron-up {
+  display: block;
+}
+.questions .question:active .fa-chevron-down {
+  display: none;
 }
 /*
 ---------
