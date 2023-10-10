@@ -43,6 +43,7 @@ ul {
 */
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 15px;
 }
 h1 {
   font-size: 5rem;
@@ -93,6 +94,11 @@ h3 {
 .btn-big {
   padding: 0.75rem 0.75rem;
 }
+.btn-2 {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
 /* ?bordo */
 .border {
   border: 0.0625rem solid var(--border-color);
@@ -105,19 +111,52 @@ h2 {
   margin-bottom: 3.75rem;
 }
 h3 {
-  margin-bottom: 1.125rem;
+  margin-bottom: 1.25rem;
 }
 h4 {
   margin-bottom: 1.875rem;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+.mb60 {
+  margin-bottom: 60px;
+}
+.mb70 {
+  margin-bottom: 70px;
+}
+.mb80 {
+  margin-bottom: 80px;
+}
+.mb90 {
+  margin-bottom: 90px;
+}
+.mb100 {
+  margin-bottom: 100px;
+}
+.mb150 {
+  margin-bottom: 150px;
 }
 /*
 ---------
 !HEADER
 ---------
 */
-header {
-  margin-bottom: 6.25rem;
-}
 /* ?parte alta header */
 .top-header {
   line-height: 5rem;
@@ -160,13 +199,6 @@ header {
 .bottom-jumbo .jumbo-left {
   width: 32%;
   padding-right: 1.875rem;
-}
-.bottom-jumbo .jumbo-left p,
-.bottom-jumbo .jumbo-left .btn {
-  margin-bottom: 2.1875rem;
-}
-.bottom-jumbo .jumbo-left :nth-child(3) {
-  margin-bottom: 3.125rem;
 }
 .bottom-jumbo .jumbo-left i {
   font-size: 3.125rem;
@@ -228,7 +260,7 @@ header {
 /* *GRIGLIA */
 .plans-offers {
   display: flex;
-  margin: 3.125rem -1.875rem 0 -1.875rem;
+  margin: 0 -1.875rem 0 -1.875rem;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -252,18 +284,8 @@ header {
   flex-direction: column;
   padding: 2.5rem 1.875rem;
 }
-.plans-offer .bottom-column strong {
-  margin-bottom: 0.625rem;
-}
 .plans-offer .bottom-column .period {
   color: var(--border-color);
-  margin-bottom: 2.8125rem;
-}
-.plans-offer .bottom-column ul li {
-  margin-bottom: 0.9375rem;
-}
-.plans-offer .bottom-column .btn {
-  margin: 1.875rem 0 1.25rem 0;
 }
 .plans-offer .bottom-column a {
   color: var(--btn-color);
@@ -273,7 +295,6 @@ header {
   background-color: var(--border-color);
   height: 0.0625rem;
   width: 20%;
-  margin: 2.8125rem 0;
 }
 /* icone lista */
 .plans-offer .bottom-column ul {
@@ -324,6 +345,24 @@ header {
   top: 40px;
   right: 30px;
   padding: 12px 35px;
+}
+
+/* ?SECONDA SEZIONE */
+.find-partner {
+  display: flex;
+}
+.find-partner .find-partner-img {
+  width: 60%;
+}
+.find-partner .find-partner-text {
+  width: 40%;
+  padding: 50px 40px;
+}
+.find-partner .find-partner-text p {
+  padding-right: 85px;
+}
+.find-partner .find-partner-text .btn {
+  display: flex;
 }
 /*
 ---------
