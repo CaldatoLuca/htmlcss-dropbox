@@ -1,4 +1,12 @@
 /* 
+TODO margine destro alle icone nella lista
+TODO e allineamento del testo
+*/
+/* 
+TODO linea sotto i link nel nav
+TODO probabilmente i li hanno altezza 100% e hover e su di loro
+*/
+/* 
 ---------
 !RESET
 ---------
@@ -295,10 +303,7 @@ header {
   color: var(--btn-color);
   font-weight: bolder;
 }
-/* 
-TODO margine destro alle icone nella lista
-TODO e allineamento del testo
-*/
+
 /* blocco in fondo */
 .team {
   width: calc(100% - 60px);
