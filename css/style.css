@@ -33,6 +33,15 @@ img {
 ul {
   list-style-type: none;
 }
+a {
+  color: var(--btn-color);
+}
+hr {
+  border: none;
+  background-color: var(--border-color);
+  height: 0.0625rem;
+  width: 20%;
+}
 /* 
 ---------
 !DEBUG
@@ -290,15 +299,6 @@ h4 {
 .plans-offer .bottom-column .period {
   color: var(--border-color);
 }
-.plans-offer .bottom-column a {
-  color: var(--btn-color);
-}
-.plans-offer .bottom-column hr {
-  border: none;
-  background-color: var(--border-color);
-  height: 0.0625rem;
-  width: 20%;
-}
 /* icone lista */
 .plans-offer .bottom-column ul {
   --icon-size: 14px;
@@ -368,6 +368,70 @@ h4 {
 /* ?TERZA SEZIONE */
 
 /* ?QUARTA SEZIONE */
+#db {
+  padding-right: 400px;
+}
+.clients {
+  display: flex;
+}
+.clients .left-clients,
+.clients .center-clients,
+.clients .right-clients {
+  width: calc(100% / 3);
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients .client {
+  width: calc(100% / 2);
+  height: 16vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients .client img {
+  width: 50%;
+  filter: brightness(0) invert(1);
+}
+.clients .center-clients {
+  padding: 40px 60px 0 50px;
+  flex-direction: column;
+}
+.clients .center-clients img {
+  width: 60%;
+}
+/* colori blocchi */
+.designit {
+  background-color: rgb(209, 233, 205);
+  padding: 10px;
+}
+.designit div {
+  background-color: rgb(162, 211, 155);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arizona {
+  background-color: rgb(97, 8, 43);
+}
+.florida {
+  background-color: rgb(0, 147, 206);
+}
+.fodds {
+  background-color: rgb(255, 28, 28);
+}
+.wbr {
+  background-color: rgb(213, 0, 31);
+}
+.hearts-corporation {
+  background-color: rgb(180, 208, 231);
+}
+.lonely-planet {
+  background-color: rgb(13, 36, 129);
+}
+.clear-channel {
+  background-color: rgb(255, 216, 48);
+}
 /*
 ---------
 !FOOTER 
