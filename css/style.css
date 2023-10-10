@@ -7,6 +7,10 @@ TODO linea sotto i link nel nav
 TODO probabilmente i li hanno altezza 100% e hover e su di loro
 */
 /* 
+TODO :hover sui bottoni (brightness 1.4)
+TODO box-shadow nav
+*/
+/* 
 ---------
 !RESET
 ---------
@@ -21,6 +25,7 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 ul {
   list-style-type: none;
@@ -38,7 +43,6 @@ ul {
 */
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 0.9375rem;
 }
 h1 {
   font-size: 5rem;
@@ -73,7 +77,7 @@ h3 {
 }
 .big-container {
   margin: 0 auto;
-  width: 73.75rem;
+  width: 1280px;
 }
 /* ?bottoni */
 .btn {
@@ -116,7 +120,7 @@ header {
 }
 /* ?parte alta header */
 .top-header {
-  height: 5rem;
+  line-height: 5rem;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -171,7 +175,6 @@ header {
   width: 68%;
 }
 .bottom-jumbo .jumbo-img img {
-  width: 100%;
   position: relative;
   z-index: 10;
 }
