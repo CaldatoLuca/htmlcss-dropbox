@@ -1,7 +1,5 @@
 /* 
-TODO margine destro alle icone nella lista
-TODO e allineamento del testo (text-indent)
-TODO chidere div bianco per img
+TODO chidere div bianco per img e text-indent
 TODO link nel nav mandano a html diversi
 */
 
@@ -307,7 +305,7 @@ h4 {
 /* icone lista */
 .blocco-griglia .bottom-column ul {
   --icon-size: 14px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 .blocco-griglia .bottom-column ul li {
   text-indent: -16px;
