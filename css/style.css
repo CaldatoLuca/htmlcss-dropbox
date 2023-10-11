@@ -1,9 +1,7 @@
 /* 
 TODO margine destro alle icone nella lista
 TODO e allineamento del testo (text-indent)
-TODO favicon
-TODO chidere active duratura al click e div bianco per img
-TODO jumbo nel main
+TODO chidere div bianco per img
 TODO link nel nav mandano a html diversi
 */
 
@@ -207,8 +205,13 @@ h4 {
   color: black;
 }
 
-/* ?parte bassa header */
-.bottom-header {
+/*
+-------
+!MAIN
+-------
+*/
+/* ?JUMBOTRON */
+.jumbotron {
   background-color: var(--jumbo-color);
   padding: 4.375rem 0 0 0;
   position: relative;
@@ -230,7 +233,7 @@ h4 {
   position: relative;
   z-index: 10;
 }
-.bottom-header .white-bar {
+.jumbotron .white-bar {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -239,12 +242,6 @@ h4 {
   z-index: 1;
   background-color: white;
 }
-
-/*
--------
-!MAIN
--------
-*/
 /* ?PRIMA SEZIONE */
 .plans .plans-payment {
   display: flex;
