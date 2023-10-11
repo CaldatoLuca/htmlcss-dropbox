@@ -307,16 +307,15 @@ h4 {
 /* icone lista */
 .blocco-griglia .bottom-column ul {
   --icon-size: 14px;
-  padding-left: 0;
+  padding-left: 25px;
 }
-.blocco-griglia.bottom-column ul li {
-  padding-left: var(--icon-size);
+.blocco-griglia .bottom-column ul li {
+  text-indent: -16px;
 }
 .blocco-griglia .bottom-column ul li::before {
   font-family: FontAwesome;
   display: inline-block;
   width: var(--icon-size);
-  margin-left: calc(var(--icon-size) * -1);
 }
 .blocco-griglia .bottom-column ul .single-user::before {
   content: "\f007";
