@@ -26,4 +26,4 @@ Per visualizzare questo progetto in locale, segui questi passaggi:
 1. Clona questo repository sul tuo computer locale.
 2. Apri il file `index.html` nel tuo browser web.
 
-In alternativa, puoi visualizzare la demo live [qui](https://caldatoluca.github.io./dropbox/).
+In alternativa, puoi visualizzare la demo live [qui](https://caldatoluca.github.io./dropbox-layout/).
